@@ -15,7 +15,7 @@
         </div>
         <div class="row">
             <div class="col-3">Geboortedatum:</div>
-            <div class="col-9"><?= $vars['user']->birth_date ?></div>
+            <div class="col-9"><?= date("d-m-Y", strtotime($vars['user']->birth_date)) ?></div>
         </div>
         <div class="row">
             <div class="col-3">Nationaliteit:</div>
