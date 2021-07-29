@@ -6,3 +6,12 @@ header {
     background-color: black;
     color:white;
 }
+table {
+    width:100%;
+}
+.persoonsgegevens table {
+    width:50%;
+}
+hr {
+    color: black;
+}
