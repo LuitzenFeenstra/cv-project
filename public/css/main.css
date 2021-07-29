@@ -1,17 +1,12 @@
-body {
-    margin: 0;
-    padding: 0;
-}
 header {
     background-color: black;
     color:white;
 }
-table {
-    width:100%;
+footer{
+    background-color: black;
+    color:white;
 }
-.persoonsgegevens table {
-    width:50%;
-}
-hr {
-    color: black;
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
