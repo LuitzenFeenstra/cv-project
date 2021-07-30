@@ -1,15 +1,19 @@
 <?php require 'views/partials/header.view.php' ?>
 
-<div class="main">
-    <div class="col-12"><?= $vars['user']->first_name ?>. ' ' . <?= $vars['user']->last_name ?></div>
+<div class="main container">
 
-    <?php foreach ($vars['educations'] as $education) : ?>
+    <section class="opleidingen">
         <div class="row">
-            <div class="col-12"><?= $education->degree ?></div>
+            <h2>Opleidingen:</h2>
+            <hr>
+            <?php foreach ($vars['educations'] as $education) : ?>
+                <div class="col-3"><?= $education->start_year ?> / <?= $education->graduation_year ?></div>
+                <div class="col-3"><?= $education->degree ?></div>
+                <div class="col-6"><?= $education->school_name ?></div>
+            <?php endforeach ?>
         </div>
-    <?php endforeach ?>
+    </section>
+
 </div>
-
-
 
 <?php require 'views/partials/footer.view.php' ?>

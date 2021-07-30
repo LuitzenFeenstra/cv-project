@@ -35,45 +35,6 @@
         </div>
     </section>
 
-    <section class="opleidingen row">
-        <h2>Opleidingen:</h2>
-        <hr>
-        <?php foreach ($vars['educations'] as $education) : ?>
-            <div class="col-3"><?= $education->start_year ?> / <?= $education->graduation_year ?></div>
-            <div class="col-3"><?= $education->degree ?></div>
-            <div class="col-6"><?= $education->school_name ?></div>
-        <?php endforeach ?>
-    </section>
-
-    <section class="werk row">
-        <h2>Werkervaring:</h2>
-        <hr>
-        <?php foreach ($vars['jobs'] as $job) : ?>
-            <div class="col-3"><?= date("d-m-Y", strtotime($job->start_date)) ?> / <?= date("d-m-Y", strtotime($job->end_date)) ?></div>
-            <div class="col-3"><?= $job->job_title ?></div>
-            <div class="col-3"><?= $job->company_name ?></div>
-            <div class="col-3"><?= $job->company_address ?></div>
-        <?php endforeach ?>
-    </section>
-
-    <section class="skills row">
-        <h2>Vaardigheden:</h2>
-        <hr>
-        <?php foreach ($vars['skills'] as $skills) : ?>
-            <tr>
-                <div class="col-12"><?= $skills->skill ?></div>
-            </tr>
-        <?php endforeach ?>
-    </section>
-
-    <section class="hobbies row">
-        <h2>Hobbies:</h2>
-        <hr>
-        <?php foreach ($vars['hobbies'] as $hobbies) : ?>
-            <div class="col-12"><?= $hobbies->hobbies ?></div>
-        <?php endforeach ?>
-    </section>
-
 </div>
 
 <?php require 'views/partials/footer.view.php' ?>
