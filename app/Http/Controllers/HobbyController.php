@@ -26,6 +26,13 @@ class hobbyController extends Controller
 
     public function create()
     {
+        HobbiesModel::store([
+            'id'        => NULL,
+            'user_id'   => '1',
+            'hobbies'   => $_POST['hobby'],
+            'deleted'   => NULL,
+        ]);
+        header("Location: /hobbies");
     }
 
     public function show()

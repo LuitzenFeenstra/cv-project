@@ -16,3 +16,8 @@ $router->get('hobbies', 'App/Http/Controllers/HobbyController.php@index');
 
 $router->get('login', 'App/Http/Controllers/LoginController.php');
 $router->get('logout', 'App/Http/Controllers/LoginController.php@logout');
+
+$router->post('hobbies/create', 'App/Http/Controllers/HobbyController.php@create');
+$router->post('skills/create', 'App/Http/Controllers/SkillController.php@create');
+$router->post('educations/create', 'App/Http/Controllers/EducationController.php@create');
+$router->post('jobs/create', 'App/Http/Controllers/JobController.php@create');

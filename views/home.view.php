@@ -3,7 +3,7 @@
 <div class="main container">
 
     <section class="persoonsgegevens">
-        <h2>Persoonsgegevens:</h2>
+        <h2>User:</h2>
         <hr>
         <div class="row">
             <div class="col-3">Voornaam:</div>
@@ -36,7 +36,7 @@
     </section>
 
     <section class="opleidingen row">
-        <h2>Opleidingen:</h2>
+        <h2>Educations:</h2>
         <hr>
         <?php foreach ($vars['educations'] as $education) : ?>
             <div class="col-3"><?= $education->start_year ?> / <?= $education->graduation_year ?></div>
@@ -46,7 +46,7 @@
     </section>
 
     <section class="werk row">
-        <h2>Werkervaring:</h2>
+        <h2>Jobs:</h2>
         <hr>
         <?php foreach ($vars['jobs'] as $job) : ?>
             <div class="col-3"><?= date("d-m-Y", strtotime($job->start_date)) ?> / <?= date("d-m-Y", strtotime($job->end_date)) ?></div>
@@ -57,7 +57,7 @@
     </section>
 
     <section class="skills row">
-        <h2>Vaardigheden:</h2>
+        <h2>Skills:</h2>
         <hr>
         <?php foreach ($vars['skills'] as $skills) : ?>
             <tr>
