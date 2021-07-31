@@ -26,6 +26,13 @@ class SkillController extends Controller
 
     public function create()
     {
+        SkillsModel::store([
+            'id'        => NULL,
+            'user_id'   => '1',
+            'skill'     => $_POST['skill'],
+            'deleted'   => NULL,
+        ]);
+        header("Location: /skills");
     }
 
     public function show()

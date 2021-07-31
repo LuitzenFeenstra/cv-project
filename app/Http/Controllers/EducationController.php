@@ -26,6 +26,16 @@ class EducationController extends Controller
 
     public function create()
     {
+        EducationModel::store([
+            'id' => NULL,
+            'user_id'         => '1',
+            'school_name'     => $_POST['institute'],
+            'degree'          => $_POST['degree'],
+            'start_year'      => $_POST['start_year'],
+            'graduation_year' => $_POST['end_year'],
+            'deleted'         => NULL,
+        ]);
+        header("Location: /educations");
     }
 
     public function show()
